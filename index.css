@@ -1,0 +1,378 @@
+/*Paleta de cores
+2-OUTONO
+#781D42
+#A3423C
+#DE834D
+#F0D2908*/
+:root {
+    --cor1: #781D42;
+    --cor2: #A3423C ;
+    --cor3: #DE834D;
+    --cor4: #F0D290 ;
+}
+
+* {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    box-sizing:border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+
+/* MENU */
+nav {
+    border: 0.3rem black solid;
+    height: 14%;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    position:fixed;
+    width: 100%;
+    background-color:var(--cor1);
+    z-index: 10;
+    }
+
+   nav img {
+       height: 100%;
+       width:250px;
+   }
+
+   nav a {
+    height: 100%;
+    width: 11vw;
+    text-align: center;
+    padding: 3% 1%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow',
+    Arial, sans-serif;
+    color: var(--cor4);
+    font-size: 1.4rem;
+    text-decoration:none;
+    transition: 1s;
+   }
+
+/* APRESENTAÇÃO */
+
+.apresentacao {
+    background-color: rgb(237 237 237);
+    height: 91%;
+    padding-top: 8%;
+}
+
+.foto {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(163, 66, 60, 1)), url("https://www.decorfacil.com/wp-content/uploads/2021/04/20210406fachada-de-loja-41.jpg");
+    background-position: 36% 50%;
+    background-repeat: no-repeat;
+    float: right;
+    width: 40%;
+    height: 100%;
+}
+
+.foto2 {
+    height: 575px;
+    width: 384px;
+    float:right;
+    margin: 62px 241px 0px 0px;
+    transition: transform 1s;
+    transform: translateX(-20%);
+}
+
+.foto2 img {
+    height: 575px;
+    width: 384px;
+}
+
+ .texto-apresentacao {
+     height: 100%;
+     width:56%;
+     padding: 7%
+ }
+
+article {
+    padding-top:5%;
+    font-size: 2rem;
+    color: var(--cor3);
+}
+
+
+
+/* ENTRE EM CONTATO */
+
+.entre-em-contato {
+    height:60%;
+    background-color: var(--cor2);
+}
+
+.contato {
+    height: 100%;
+    width: 100%;
+    padding: 6%;
+    text-align: center;
+}
+
+.emails {
+    padding: 4% 0px;
+}
+
+.enderecos {
+    padding-top: 4%;
+}
+/*CSS GERAL*/
+
+.titulo1 {
+    font-size: 3rem;
+    color: var(--cor1);
+}
+
+.titulo2 {
+    font-size: 2.5rem;
+    color: var(--cor3);
+}
+
+a:hover {
+    transition: 1s;
+    background-color: #621936;
+}
+
+
+/*FOOTER*/
+footer {
+    height: 15vh;
+    background-color: var(--cor3);
+}
+
+.moldura-footer {
+    padding: 2.5% 7% 2.5%;
+}
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERY*/
+
+
+
+@media (min-width: 1550px) {
+
+    .apresentacao {
+        padding-top: 7%;}
+
+    .foto {
+      background-size: cover;
+    }
+
+    .foto2 {
+        margin: 10vh 20vw 0px 0px;
+    }
+
+    nav img {
+        width: 20vw;
+
+    }
+
+
+}
+
+
+
+
+@media (max-width: 1370px) and (min-width: 1100px) {
+
+    .foto2 {
+        margin: 100px 100px 0px 0px;
+    }
+}
+
+
+
+@media (max-width: 1100px) and (min-width: 925px){
+
+    .foto2 {
+        margin: 102px 20px 0px 0px;
+    }
+
+    .foto {
+        width: 400px;
+
+    }
+
+    .texto-apresentacao {
+        padding: 150px 0px 0px 50px;
+        width: 45vw;
+          
+     }
+
+}
+
+
+
+@media (max-width: 925px) and (min-width: 825px) {
+
+
+    .texto-apresentacao {
+       padding: 150px 0px 0px 50px;
+       width: 45vw;
+         
+    }
+
+
+    .foto2 {
+        margin: 100px -30px 0px 0px;
+    }
+     
+    .foto2 img {
+        width: 350px
+    }
+
+
+    .foto {
+        width: 400px;
+    }
+
+
+}
+
+@media (max-width: 825px) and (min-width: 700px) {
+
+    .texto-apresentacao {
+        padding: 150px 0px 0px 50px;
+        width: 42vw;
+
+    }
+
+    article {font-size: 2rem;}
+
+    .texto-apresentacao .titulo1 { 
+        font-size: 2rem;}
+
+       .foto2 {
+            margin: 120px -80px 0px 0px;
+        }
+
+        .foto {
+            width: 350px;
+        }
+
+        .foto2 img {
+          height: 575px;
+          width: 300px;}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 700px) and (min-width: 500px) {
+
+    .texto-apresentacao {
+        padding: 150px 0px 0px 50px;
+        width: 42vw;
+
+    }
+
+    article {font-size: 1.7rem;}
+
+    .texto-apresentacao .titulo1 { 
+        font-size: 1.7rem;}
+
+       .foto2 {
+            margin: 150px -77px 0px 0px;
+            width: 335px;
+        }
+
+        .foto {
+            width: 270px;
+        }
+
+        .foto2 img {
+          height: 575px;
+          width: 300px;}
+
+
+          nav img {
+            width: 25vw;
+
+
+        }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+    
+  
+    .texto-apresentacao {
+        padding: 100px 0px 0px 50px;
+        width: 200px;
+    }
+  
+
+    article {font-size: 1.3rem;}
+
+    .texto-apresentacao .titulo1 { 
+        font-size: 1.7rem;
+    }
+
+
+    
+    
+
+        .foto2 {
+            margin: 100px -20px 10px 0px;
+            width: 150px;
+        }
+
+        .foto2 img {
+            height: 575px;
+            width: 100px;
+            height: 250px;}
+
+
+            .foto {
+                width: 150px;
+            }
+
+           nav img {
+               width: 20vw;
+
+
+           }
+           nav a {
+               font-size: 1rem;
+           }
+
+
+}
+
+
+
+
+
+
+
+
+
